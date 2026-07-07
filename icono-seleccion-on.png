@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="30px" viewBox="0 0 43 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-219.000000, -24.000000)">
+            <g id="Group-4" transform="translate(219.000000, 24.000000)">
+                <polygon id="Fill-1" fill="#1C2A7D" points="0 30 43 30 43 0 0 0"></polygon>
+                <polygon id="Fill-2" fill="#FFFFFF" points="0 25 43 25 43 5 0 5"></polygon>
+                <polygon id="Fill-3" fill="#BC0030" points="0 20 43 20 43 10 0 10"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

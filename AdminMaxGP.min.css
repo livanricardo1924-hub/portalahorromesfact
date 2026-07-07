@@ -1,0 +1,375 @@
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+(min-device-width: 368px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+    }
+
+    td {
+        /* Behave  like a "row" */
+
+        position: relative;
+    
+    }
+
+}
+
+td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    padding-right: 10px;
+    white-space: nowrap;
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/*@media only screen
+and (min-device-width : 120px)
+and (max-device-width : 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 320px; }
+    }*/
+
+/* iPads (portrait and landscape) ----------- */
+/*@media only screen and (min-device-width: 168px) and (max-device-width: 1024px) {
+    body {
+        width: 495px;
+    }
+}*/
+
+body {
+    padding: 0;
+    width: 100%;
+}
+
+#form {
+  margin: 4%;
+border: 1px solid;
+border-color: #dfdfdf;
+padding: 3%;
+}
+
+#confirm {
+    margin: 4%;
+    /*border: 1px solid;
+    border-color: #dfdfdf;*/
+    padding: 3%;
+}
+
+#content{
+    margin: 5%;
+
+}
+
+.titAgrupacionDetalle {
+    font-weight: bold;
+    margin-left: 0;
+    text-align: center;
+}
+
+td, th {
+    padding: 26px;
+
+}
+
+#inputTextform {
+    /* width: 100px; */
+    height: 36px;
+    border-radius: 5px !important;
+    position: relative;
+    float: left;
+    /* margin-left: 8px; */
+}
+
+#pageconfirmapagos {
+    margin: 6%;
+    margin-top: 80px;
+    border: 1px solid;
+    border-color: #dfdfdf;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#finalizar {
+    width: 50%;
+    float: right;
+
+}
+
+#imprimir {
+    width: 50%;
+    float: left;
+}
+#tablaDetalleconfirma td{
+     
+	padding: 4px;
+	width: 100%;
+	margin-bottom:5px;
+
+    }
+    
+/* Estilos css requerimiento Pago Saldo*/
+
+.tittle-1{
+    display: none;
+}
+
+.text-saldo {
+  text-align: justify !important ;
+}
+
+.tittle-1 .media img{
+	margin: 10px !important ;
+	width: 50px !important ;
+}
+.tittle-1 .info{
+	background-color: #f7f7f7 !important ;
+	border-radius: 10px !important ;
+     display: flex;
+     margin-bottom: 15px;
+}
+.tittle-1 .info img{
+	margin : 10px 10px 10px 30px !important;
+	width: 50px !important ;
+}
+
+.tittle-1 .info h6{
+    font-size: 18px;
+}
+
+#SaldoParcial {
+    
+    height: 33px;
+    width: 62%;
+    border-radius: 5px !important;
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    
+}
+
+#SaldoParcial::placeholder {
+    
+   font-size:13px;
+    
+}
+
+
+#SaldoParcialImg{
+    
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+#SaldoParcialImgNew{
+    
+        width: 61px;
+        height: 22px;
+        margin-left: 10px;
+        margin-right: 7px;
+        vertical-align: middle;
+        margin-top: -2px;
+    
+    
+
+}
+
+.mt-3{
+    padding: 20px;
+}
+
+/*Fin estilo PagoParcial*/
+    
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    #form {
+        margin: 15px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .btn.btn-primary2 {
+        margin-top: 0;
+    }
+
+   .btn.btn-primary3 {
+        margin-top: 0;
+    }
+    #DETALLE td
+    {
+        padding: 5px 0px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+
+
+    .btn.btn-primary2 {
+        margin-top: 0;
+        max-width: 24em;
+    }
+
+   .btn.btn-primary3 {
+        margin-top: 0;
+    }
+    
+    #DETALLE td
+    {
+        padding: 5px 0px;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    #form {
+        margin: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .btn.btn-primary2 {
+        margin-top: 0;
+        max-width: 29em;
+    }
+
+    #DETALLE td
+    {
+        padding: 5px 0px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) and (orientation: landscape) {
+    .btn.btn-primary2 {
+        max-width: 33em;
+    }
+    
+    .btn.btn-primary3 {
+        max-width: 33em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #form {
+     margin: 4%;
+border: 1px solid;
+border-color: #dfdfdf;
+padding: 3%;
+    }
+
+    .btn.btn-primary2 {
+        margin-top: 0;
+        max-width: 37em;
+    }
+ .btn.btn-primary3 {
+        margin-top: 0;
+        max-width: 37em;
+    }
+    #DETALLE td
+    {
+        padding: 5px 0px;
+    }
+	#tablaDetalleconfirma td{
+		 
+	padding: 4px;
+	width: 70%;
+	margin-bottom:5px;
+
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) and (orientation: portrait) {
+    .btn.btn-primary2 {
+        margin-top: 0;
+        max-width: 42em;
+    }
+       .btn.btn-primary3 {
+        margin-top: 0;
+        max-width: 42em;
+    }
+	
+	#tablaDetalleconfirma td{
+		 
+	padding: 4px;
+	width: 70%;
+	margin-bottom:5px;
+
+	}
+}
+
+@media screen and (min-width: 900px) and (orientation: portrait) {
+    .btn.btn-primary2 {
+        max-width: 43em;
+    }
+       .btn.btn-primary3 {
+        max-width: 43em;
+    }
+	
+	#tablaDetalleconfirma td{
+		 
+	padding: 4px;
+	width: 70%;
+	margin-bottom:5px;
+
+	}
+}
+
+@media screen and (min-width: 980px) and (max-width: 1280px) and (orientation: portrait) {
+    .btn.btn-primary2 {
+        max-width: 47em;
+    }
+      .btn.btn-primary3 {
+        max-width: 47em;
+    }
+	
+	#tablaDetalleconfirma td{
+		 
+	padding: 4px;
+	width: 70%;
+	margin-bottom:5px;
+
+	}
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .btn.btn-primary2 {
+        max-width: 100%;
+    }
+      .btn.btn-primary3 {
+        max-width: 100%;
+    }
+	
+	#tablaDetalleconfirma td{
+		 
+	padding: 4px;
+	width: 70%;
+	margin-bottom:5px;
+
+	}
+}
+
+}
